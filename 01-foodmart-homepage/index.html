@@ -1,0 +1,1040 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOODMART</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <section class="site-header">
+        <div class="logo site-logo">
+          <h1 class="logo__title">FOODMART</h1>
+        </div>
+        <nav class="main-nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link-1" id="nav-home" href="#">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link-2" id="nav-fruit" href="#">Fruit</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link-3" id="nav-vegetable" href="#"
+                >Vegetable</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="search-bar search">
+          <button class="search-btn search__btn" type="submit">
+            <svg
+              width="35"
+              height="42"
+              viewBox="0 0 39 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              style="padding: 2px"
+            >
+              <path
+                d="M28.5304 26.9504L26.7316 26.9612L26.09 26.3015C28.8019 22.845 30.1857 18.1432 29.3818 13.1595C28.2709 6.33464 22.9557 0.910958 16.575 0.113492C6.93563 -1.10687 -1.11839 7.68939 0.127628 18.0766C0.942834 24.9524 6.0318 30.6232 12.3688 31.7404C16.9961 32.5483 21.3361 30.9988 24.5064 28.0311L25.1253 28.7155L25.1368 30.6567L34.8764 41.0425C35.816 42.0444 37.3416 42.0353 38.2692 41.0223C39.1968 40.0092 39.1869 38.3628 38.2474 37.3609L28.5304 26.9504ZM14.8683 27.0319C9.19853 27.0657 4.59228 22.1538 4.5558 16.0352C4.51932 9.91656 9.06668 4.95013 14.7364 4.91633C20.4062 4.88253 25.0125 9.79438 25.0489 15.913C25.0854 22.0317 20.5381 26.9981 14.8683 27.0319Z"
+                fill="#FFC107"
+              />
+            </svg>
+          </button>
+          <input
+            class="search-input search__input"
+            type="search"
+            placeholder="Search products"
+          />
+          <select class="search-category search__select">
+            <option class="object" value="all">All Categories</option>
+          </select>
+        </div>
+        <div class="social-icons">
+          <div class="icon profile-icon">
+            <svg
+              id="profile-icon"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M32 16C32 7.184 24.816 0 16 0C7.184 0 0 7.184 0 16C0 20.64 2 24.816 5.168 27.744C5.168 27.76 5.168 27.76 5.152 27.776C5.312 27.936 5.504 28.064 5.664 28.208C5.76 28.288 5.84 28.368 5.936 28.432C6.224 28.672 6.544 28.896 6.848 29.12C6.96 29.2 7.056 29.264 7.168 29.344C7.472 29.552 7.792 29.744 8.128 29.92C8.24 29.984 8.368 30.064 8.48 30.128C8.8 30.304 9.136 30.464 9.488 30.608C9.616 30.672 9.744 30.736 9.872 30.784C10.224 30.928 10.576 31.056 10.928 31.168C11.056 31.216 11.184 31.264 11.312 31.296C11.696 31.408 12.08 31.504 12.464 31.6C12.576 31.632 12.688 31.664 12.816 31.68C13.264 31.776 13.712 31.84 14.176 31.888C14.24 31.888 14.304 31.904 14.368 31.92C14.912 31.968 15.456 32 16 32C16.544 32 17.088 31.968 17.616 31.92C17.68 31.92 17.744 31.904 17.808 31.888C18.272 31.84 18.72 31.776 19.168 31.68C19.28 31.664 19.392 31.616 19.52 31.6C19.904 31.504 20.304 31.424 20.672 31.296C20.8 31.248 20.928 31.2 21.056 31.168C21.408 31.04 21.776 30.928 22.112 30.784C22.24 30.736 22.368 30.672 22.496 30.608C22.832 30.464 23.168 30.304 23.504 30.128C23.632 30.064 23.744 29.984 23.856 29.92C24.176 29.728 24.496 29.552 24.816 29.344C24.928 29.28 25.024 29.2 25.136 29.12C25.456 28.896 25.76 28.672 26.048 28.432C26.144 28.352 26.224 28.272 26.32 28.208C26.496 28.064 26.672 27.92 26.832 27.776C26.832 27.76 26.832 27.76 26.816 27.744C30 24.816 32 20.64 32 16ZM23.904 23.952C19.568 21.04 12.464 21.04 8.096 23.952C7.392 24.416 6.816 24.96 6.336 25.552C3.904 23.088 2.4 19.712 2.4 16C2.4 8.496 8.496 2.4 16 2.4C23.504 2.4 29.6 8.496 29.6 16C29.6 19.712 28.096 23.088 25.664 25.552C25.2 24.96 24.608 24.416 23.904 23.952Z"
+                fill="white"
+              />
+              <path
+                d="M16 7.88751C12.688 7.88751 10 10.5755 10 13.8875C10 17.1355 12.544 19.7755 15.92 19.8715H16.064H16.176H16.208C19.44 19.7595 21.984 17.1355 22 13.8875C22 10.5755 19.312 7.88751 16 7.88751Z"
+                fill="white"
+              />
+            </svg>
+            <label for="profile-icon">profile</label>
+          </div>
+          <div class="icon Wishlist-icon">
+            <svg
+              id="wishlist-icon"
+              viewBox="0 0 32 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M24 0C20 0 17.9875 1.725 16 4C14.0125 1.725 12 0 8 0C4 0 0 2.66875 0 10.6687C0 14.6687 4 22.6688 16 29.3375C28 22.6688 32 14.6687 32 10.6687C32 2.66875 28 0 24 0Z"
+                fill="white"
+              />
+            </svg>
+            <label for="wishlist-icon">wishlist</label>
+          </div>
+          <div class="icon cart-icon">
+            <svg
+              id="cart-icon"
+              viewBox="0 0 32 29"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M29.34 16.7399L31.9663 5.18439C32.1559 4.35006 31.5217 3.55556 30.6661 3.55556H8.84489L8.33567 1.06611C8.20878 0.445611 7.66278 0 7.02939 0H1.33333C0.596945 0 0 0.596945 0 1.33333V2.22222C0 2.95861 0.596945 3.55556 1.33333 3.55556H5.21572L9.11839 22.6353C8.18472 23.1722 7.55556 24.179 7.55556 25.3333C7.55556 27.0516 8.94845 28.4444 10.6667 28.4444C12.3849 28.4444 13.7778 27.0516 13.7778 25.3333C13.7778 24.4626 13.4196 23.6758 12.8431 23.1111H24.4902C23.9137 23.6758 23.5556 24.4626 23.5556 25.3333C23.5556 27.0516 24.9485 28.4444 26.6667 28.4444C28.3849 28.4444 29.7778 27.0516 29.7778 25.3333C29.7778 24.1016 29.0618 23.0371 28.0234 22.5331L28.3299 21.1844C28.5195 20.3501 27.8853 19.5556 27.0297 19.5556H12.1176L11.754 17.7778H28.0398C28.6624 17.7778 29.2021 17.347 29.34 16.7399Z"
+                fill="white"
+              />
+            </svg>
+            <label for="cart-icon">My Cart</label>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero-section">
+        <div class="hero-content">
+          <div class="hero-subtitle"><h3>Daily Discounti</h3></div>
+          <div class="hero-title">
+            <h1>
+              Fruits § <br />
+              Vegetables
+            </h1>
+          </div>
+          <div class="hero-description">
+            <p>
+              These superfoods are packed with vital nutrients, including
+              vitamins
+              <br />
+              and minerals that can help keep you health. Plus, they're easy to
+              <br />
+              enjoy-just add water and let the magic happen!
+            </p>
+          </div>
+          <div class="hero-cta">
+            <span>View More</span>
+            <img
+              src="assets/images/svg/arrow-right-icon.svg"
+              alt="arrow-right"
+            />
+          </div>
+          <span class="offer-badge"
+            ><svg
+              viewBox="0 0 179 165"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M122.958 3.78923C133.987 2.11287 144.525 8.9561 147.479 19.713L154.212 44.229C155.004 47.1129 156.376 49.805 158.243 52.1409L174.12 71.9982C181.086 80.7111 180.428 93.2586 172.589 101.196L154.724 119.285C152.623 121.412 150.977 123.946 149.888 126.732L140.629 150.41C136.567 160.799 125.372 166.503 114.579 163.683L89.9807 157.256C87.0872 156.5 84.0699 156.342 81.1132 156.791L55.9781 160.612C44.9495 162.288 34.4119 155.445 31.4576 144.688L24.7245 120.172C23.9325 117.288 22.5608 114.596 20.6932 112.26L4.81695 92.4029C-2.1491 83.6901 -1.4915 71.1426 6.34713 63.2056L24.2121 45.1166C26.3136 42.9888 27.9592 40.4548 29.0483 37.6695L38.3071 13.9916C42.3696 3.60237 53.5649 -2.10188 64.3578 0.718102L88.9558 7.14507C91.8494 7.90109 94.8666 8.05922 97.8233 7.6098L122.958 3.78923Z"
+                fill="#0A490A"
+              />
+            </svg>
+            <h1 class="offer-badge__text">-20%</h1>
+          </span>
+        </div>
+        <span class="hero-image">
+          <img src="assets/images/fruit.webp" alt="fruit" />
+        </span>
+      </section>
+    </header>
+    <!-- main section -->
+    <main class="site-main">
+      <!-- page section 1 -->
+      <section class="page-main-1">
+        <div class="more">
+          <span class="more-title">Love our Categories</span>
+          <span class="more-btn"
+            >Show more
+            <img
+              src="assets/images/svg/arrow-right-icon.svg"
+              alt="arrow-right"
+            />
+          </span>
+        </div>
+        <div class="product-section-1">
+          <div class="product-item">
+            <img
+              class="product-image"
+              src="assets/images/Blueberry.png"
+              alt="fruits"
+            />
+            <h3 class="product-title product-content">Fruits</h3>
+            <p class="product-description product-content">
+              So what you're looking for <br />
+              fresh produce meals
+            </p>
+            <button class="product-button product-content">
+              View More
+              <img
+                src="assets/images/svg/arrow-right-icon.svg"
+                alt="arrow-right"
+              />
+            </button>
+            <div class="product-overlay"></div>
+          </div>
+          <div class="product-item">
+            <img
+              class="product-image"
+              src="assets/images/Green-plum.png"
+              alt="Vegetables"
+            />
+            <h3 class="product-title product-content">Vegetables</h3>
+            <p class="product-description product-content">
+              So what you're looking for <br />
+              fresh produce meals
+            </p>
+            <button class="product-button product-content">
+              View More
+              <img
+                src="assets/images/svg/arrow-right-icon.svg"
+                alt="arrow-right"
+              />
+            </button>
+            <div class="product-overlay"></div>
+          </div>
+          <div class="product-item">
+            <img
+              class="product-image"
+              src="assets/images/bread.png"
+              alt="bakers"
+            />
+            <h3 class="product-title product-content">Bakers</h3>
+            <p class="product-description product-content">
+              So what you're looking for <br />
+              fresh produce meals
+            </p>
+            <button class="product-button product-content">
+              View More
+              <img
+                src="assets/images/svg/arrow-right-icon.svg"
+                alt="arrow-right"
+              />
+            </button>
+            <div class="product-overlay"></div>
+          </div>
+          <div class="product-item">
+            <img
+              class="product-image"
+              src="assets/images/Juice.png"
+              alt="Juices"
+            />
+            <h3 class="product-title product-content">Juices</h3>
+            <p class="product-description product-content">
+              So what you're looking for <br />
+              fresh produce meals
+            </p>
+            <button class="product-button product-content">
+              View More
+              <img
+                src="assets/images/svg/arrow-right-icon.svg"
+                alt="arrow-right"
+              />
+            </button>
+            <div class="product-overlay"></div>
+          </div>
+        </div>
+        <div class="product-section-2">
+          <div class="product-item">
+            <img
+              class="product-image"
+              src="assets/images/cake.png"
+              alt="Cake"
+            />
+            <h3 class="product-title product-content">Cake</h3>
+            <p class="product-description product-content">
+              So what you're looking for <br />
+              fresh produce meals
+            </p>
+            <button class="product-button product-content">
+              View More
+              <img
+                src="assets/images/svg/arrow-right-icon.svg"
+                alt="arrow-right"
+              />
+            </button>
+            <div class="product-overlay"></div>
+          </div>
+          <div class="product-item">
+            <img
+              class="product-image"
+              src="assets/images/smoothie.png"
+              alt="Smoothies"
+            />
+            <h3 class="product-title product-content">Smoothies</h3>
+            <p class="product-description product-content">
+              So what you're looking for <br />
+              fresh produce meals
+            </p>
+            <button class="product-button product-content">
+              View More
+              <img
+                src="assets/images/svg/arrow-right-icon.svg"
+                alt="arrow-right"
+              />
+            </button>
+            <div class="product-overlay"></div>
+          </div>
+          <div class="product-item">
+            <img class="product-image" src="assets/images/Egg.png" alt="Eggs" />
+            <h3 class="product-title product-content">Eggs</h3>
+            <p class="product-description product-content">
+              So what you're looking for <br />
+              fresh produce meals
+            </p>
+            <button class="product-button product-content">
+              View More
+              <img
+                src="assets/images/svg/arrow-right-icon.svg"
+                alt="arrow-right"
+              />
+            </button>
+            <div class="product-overlay"></div>
+          </div>
+          <div class="product-item">
+            <img
+              class="product-image"
+              src="assets/images/Spaghetti.png"
+              alt="Noodles"
+            />
+            <h3 class="product-title product-content">Noodles</h3>
+            <p class="product-description product-content">
+              So what you're looking for <br />
+              fresh produce meals
+            </p>
+            <button class="product-button product-content">
+              View More
+              <img
+                src="assets/images/svg/arrow-right-icon.svg"
+                alt="arrow-right"
+              />
+            </button>
+            <div class="product-overlay"></div>
+          </div>
+        </div>
+      </section>
+      <section class="page-main-2">
+        <div class="more">
+          <span class="more-title">Love our Categories</span>
+          <span class="more-btn"
+            >Show more
+            <img
+              src="assets/images/svg/arrow-right-icon.svg"
+              alt="arrow-right"
+            />
+          </span>
+        </div>
+        <div class="card-section">
+          <div class="card-item">
+            <img
+              class="card-apple-image card-image"
+              src="assets/images/apple.png"
+              alt="Pomme"
+            />
+            <div class="card-info">
+              <h3 class="card-h3">Fruits</h3>
+              <strong class="strong">Pomme</strong>
+              <span class="card-rating"
+                ><img src="assets/images/svg/5star.svg" alt="Score" />
+                <span>(1)</span></span
+              >
+              <span class="card-price"
+                ><p><span>175.00</span><span class="price-unit">DA</span></p>
+                <p><del>240.00</del><del class="price-unit">DA</del></p></span
+              >
+              <div class="input-group">
+                <div class="size-box">
+                  <label for="">size</label>
+                  <div class="box-select-size">
+                    <select name="" id="">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                    </select>
+                  </div>
+                  <small>kg</small>
+                </div>
+                <div class="quantity-box">
+                  <label for="">Quantity</label>
+                  <div class="input-quantity">
+                    <input class="" type="number" />
+                    <small class="plus">+</small>
+                    <small class="minus">-</small>
+                  </div>
+                </div>
+              </div>
+              <button class="card-button" type="">
+                Add to Cart
+                <img src="assets/images/svg/arrow-right-icon.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="card-item">
+            <img
+              class="card-Brocoli-Shake-image card-image"
+              src="assets/images/Brocoli-Shake.png"
+              alt="Pomme"
+            />
+            <div class="card-info">
+              <h3 class="card-h3">Juices</h3>
+              <strong class="strong">Brocoli Shake </strong>
+              <span class="card-rating"
+                ><img src="assets/images/svg/5star.svg" alt="Score" />
+                <span>(1)</span></span
+              >
+              <span class="card-price"
+                ><p><span>175.00</span><span class="price-unit">DA</span></p>
+                <p><del>240.00</del><del class="price-unit">DA</del></p></span
+              >
+              <div class="input-group">
+                <div class="size-box">
+                  <label for="">size</label>
+                  <div class="box-select-size">
+                    <select name="" id="">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                    </select>
+                  </div>
+                  <small>kg</small>
+                </div>
+                <div class="quantity-box">
+                  <label for="">Quantity</label>
+                  <div class="input-quantity">
+                    <input class="" type="number" />
+                    <small class="plus">+</small>
+                    <small class="minus">-</small>
+                  </div>
+                </div>
+              </div>
+              <button class="card-button" type="">
+                Add to Cart
+                <img src="assets/images/svg/arrow-right-icon.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="card-item">
+            <img
+              class="card-donuts-image card-image"
+              src="assets/images/Donuts.png"
+              alt="Pomme"
+            />
+            <div class="card-info">
+              <h3 class="card-h3">Bakers</h3>
+              <strong class="strong">Donuts</strong>
+              <span class="card-rating"
+                ><img src="assets/images/svg/5star.svg" alt="Score" />
+                <span>(1)</span></span
+              >
+              <span class="card-price"
+                ><p><span>175.00</span><span class="price-unit">DA</span></p>
+                <p><del>240.00</del><del class="price-unit">DA</del></p></span
+              >
+              <div class="input-group">
+                <div class="size-box">
+                  <label for="">size</label>
+                  <div class="box-select-size">
+                    <select name="" id="">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                    </select>
+                  </div>
+                  <small>kg</small>
+                </div>
+                <div class="quantity-box">
+                  <label for="">Quantity</label>
+                  <div class="input-quantity">
+                    <input class="" type="number" />
+                    <small class="plus">+</small>
+                    <small class="minus">-</small>
+                  </div>
+                </div>
+              </div>
+              <button class="card-button" type="">
+                Add to Cart
+                <img src="assets/images/svg/arrow-right-icon.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-main-3">
+        <div class="more">
+          <span class="more-title">Love our Categories</span>
+          <span class="more-btn"
+            >Show more
+            <img
+              src="assets/images/svg/arrow-right-icon.svg"
+              alt="arrow-right"
+            />
+          </span>
+        </div>
+        <div class="categorise__section">
+          <ul class="categorise__list">
+            <li class="categorise__item">All Categories</li>
+            <li class="categorise__item">Vegetables</li>
+            <li class="categorise__item">Fruits</li>
+            <li class="categorise__item">Juices</li>
+            <li class="categorise__item">Bakers</li>
+          </ul>
+        </div>
+        <div class="card-section">
+          <div class="card-item">
+            <img
+              class="card-apple-image card-image"
+              src="assets/images/apple.png"
+              alt="Pomme"
+            />
+            <div class="card-info">
+              <h3 class="card-h3">Fruits</h3>
+              <strong class="strong">Pomme</strong>
+              <span class="card-rating"
+                ><img src="assets/images/svg/5star.svg" alt="Score" />
+                <span>(1)</span></span
+              >
+              <span class="card-price"
+                ><p><span>175.00</span><span class="price-unit">DA</span></p>
+                <p><del>240.00</del><del class="price-unit">DA</del></p></span
+              >
+              <div class="input-group">
+                <div class="size-box">
+                  <label for="">size</label>
+                  <div class="box-select-size">
+                    <select name="" id="">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                    </select>
+                  </div>
+                  <small>kg</small>
+                </div>
+                <div class="quantity-box">
+                  <label for="">Quantity</label>
+                  <div class="input-quantity">
+                    <input class="" type="number" />
+                    <small class="plus">+</small>
+                    <small class="minus">-</small>
+                  </div>
+                </div>
+              </div>
+              <button class="card-button" type="">
+                Add to Cart
+                <img src="assets/images/svg/arrow-right-icon.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="card-item">
+            <img
+              class="card-Brocoli-Shake-image card-image"
+              src="assets/images/Brocoli-Shake.png"
+              alt="Pomme"
+            />
+            <div class="card-info">
+              <h3 class="card-h3">Juices</h3>
+              <strong class="strong">Brocoli Shake </strong>
+              <span class="card-rating"
+                ><img src="assets/images/svg/5star.svg" alt="Score" />
+                <span>(1)</span></span
+              >
+              <span class="card-price"
+                ><p><span>175.00</span><span class="price-unit">DA</span></p>
+                <p><del>240.00</del><del class="price-unit">DA</del></p></span
+              >
+              <div class="input-group">
+                <div class="size-box">
+                  <label for="">size</label>
+                  <div class="box-select-size">
+                    <select name="" id="">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                    </select>
+                  </div>
+                  <small>kg</small>
+                </div>
+                <div class="quantity-box">
+                  <label for="">Quantity</label>
+                  <div class="input-quantity">
+                    <input class="" type="number" />
+                    <small class="plus">+</small>
+                    <small class="minus">-</small>
+                  </div>
+                </div>
+              </div>
+              <button class="card-button" type="">
+                Add to Cart
+                <img src="assets/images/svg/arrow-right-icon.svg" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="card-item">
+            <img
+              class="card-donuts-image card-image"
+              src="assets/images/Donuts.png"
+              alt="Pomme"
+            />
+            <div class="card-info">
+              <h3 class="card-h3">Bakers</h3>
+              <strong class="strong">Donuts</strong>
+              <span class="card-rating"
+                ><img src="assets/images/svg/5star.svg" alt="Score" />
+                <span>(1)</span></span
+              >
+              <span class="card-price"
+                ><p><span>175.00</span><span class="price-unit">DA</span></p>
+                <p><del>240.00</del><del class="price-unit">DA</del></p></span
+              >
+              <div class="input-group">
+                <div class="size-box">
+                  <label for="">size</label>
+                  <div class="box-select-size">
+                    <select name="" id="">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                    </select>
+                  </div>
+                  <small>kg</small>
+                </div>
+                <div class="quantity-box">
+                  <label for="">Quantity</label>
+                  <div class="input-quantity">
+                    <input class="" type="number" />
+                    <small class="plus">+</small>
+                    <small class="minus">-</small>
+                  </div>
+                </div>
+              </div>
+              <button class="card-button" type="">
+                Add to Cart
+                <img src="assets/images/svg/arrow-right-icon.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="categories__section">
+        <div class="categories-more">
+          <span class="more-title">Categories</span>
+          <span class="more-btn"
+            >Show more
+            <img
+              src="assets/images/svg/arrow-right-icon.svg"
+              alt="arrow-right"
+            />
+          </span>
+        </div>
+        <div class="categorise__box">
+          <div class="categories__item item-orange">
+            <div class="info-item">
+              <h4 class="secend-title">Juices</h4>
+              <strong class="title-item">Brocoli Shake </strong>
+              <div class="card-rating">
+                <img src="assets/images/svg/5star-border.svg" alt="" />(1)
+              </div>
+              <div class="price-item">
+                <span>175.00</span><span class="price-unit-item">DA</span>
+              </div>
+              <button class="button-itme" type="">
+                Add to Cart
+                <img
+                  src="assets/images/svg/arrow-right-icon.svg"
+                  alt="right-arrow"
+                  width="20rem"
+                />
+              </button>
+            </div>
+            <img class="photo-item" src="assets/images/Pumpkin.png" alt="" />
+          </div>
+          <div class="categories__item item-yellow">
+            <div class="info-item">
+              <h4 class="secend-title">Juices</h4>
+              <strong class="title-item">Brocoli Shake </strong>
+              <div class="card-rating">
+                <img src="assets/images/svg/5star-border.svg" alt="" />(1)
+              </div>
+              <div class="price-item">
+                <span>175.00</span><span class="price-unit-item">DA</span>
+              </div>
+              <button class="button-itme" type="">
+                Add to Cart
+                <img
+                  src="assets/images/svg/arrow-right-icon.svg"
+                  alt="right-arrow"
+                  width="20rem"
+                />
+              </button>
+            </div>
+            <img
+              class="photo-item-benana"
+              src="assets/images/Banana.png"
+              alt=""
+            />
+          </div>
+          <div class="categories__item item-green">
+            <div class="info-item">
+              <h4 class="secend-title">Juices</h4>
+              <strong class="title-item">Brocoli Shake </strong>
+              <div class="card-rating">
+                <img src="assets/images/svg/5star.svg" alt="" />(1)
+              </div>
+              <div class="price-item">
+                <span>175.00</span><span class="price-unit-item">DA</span>
+              </div>
+              <button class="button-itme" type="">
+                Add to Cart
+                <img
+                  src="assets/images/svg/arrow-right-icon.svg"
+                  alt="right-arrow"
+                  width="20rem"
+                />
+              </button>
+            </div>
+            <img
+              class="photo-item-avocado"
+              src="assets/images/avocado.png"
+              alt=""
+            />
+          </div>
+          <div class="categories__item item-pink">
+            <div class="info-item">
+              <h4 class="secend-title">Juices</h4>
+              <strong class="title-item">Brocoli Shake </strong>
+              <div class="card-rating">
+                <img src="assets/images/svg/5star-border.svg" alt="" />(1)
+              </div>
+              <div class="price-item">
+                <span>175.00</span><span class="price-unit-item">DA</span>
+              </div>
+              <button class="button-itme" type="">
+                Add to Cart
+                <img
+                  src="assets/images/svg/arrow-right-icon.svg"
+                  alt="right-arrow"
+                  width="20rem"
+                />
+              </button>
+            </div>
+            <img
+              class="photo-item-dragon"
+              src="assets/images/Dragon-fruit.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section class="wiew-more">
+        <div class="wiew-item1">
+          <div class="image-wiew-item1"></div>
+          <div class="shadow-itme"></div>
+          <div class="info-wiew-item">
+            <h3>
+              Fruits § <br />
+              Vegetables
+            </h3>
+            <p>
+              These superfoods are packed with vital nutrients, including
+              vitamins <br />
+              and minerals that can help keep you health. Plus, they’re easy to
+              <br />
+              enjoy-just add water and let the magic happen!
+            </p>
+            <button class="wiew-more-btn">
+              View More
+              <img src="assets/images/svg/arrow-right-icon.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="wiew-item2">
+          <div class="image-wiew-item2"></div>
+          <div class="shadow-itme"></div>
+          <div class="info-wiew-item">
+            <h3>
+              Fruits § <br />
+              Vegetables
+            </h3>
+            <p>
+              These superfoods are packed with vital nutrients, including
+              vitamins <br />
+              and minerals that can help keep you health. Plus, they’re easy to
+              <br />
+              enjoy-just add water and let the magic happen!
+            </p>
+            <button class="wiew-more-btn">
+              View More
+              <img src="assets/images/svg/arrow-right-icon.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="comment__section">
+        <div class="comment__banner">
+          <div class="comment__seting">
+            <h2 class="comment__title">Categories</h2>
+            <p class="comment__desc">
+              These superfoods are packed with vital nutrients, including
+              vitamins <br />
+              and minerals that can help keep you health. Plus, they’re easy to
+              <br />
+              enjoy-just add water and let the magic happen!
+            </p>
+            <button class="view-more-btn">
+              View More
+              <img
+                class="btn-icon"
+                src="assets/images/svg/arrow-right-icon.svg"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="comment__slide">
+            <div class="comment-slide-item1 testimonial-card">
+              <span class="card-rating"
+                ><img
+                  class="rating-icon"
+                  src="assets/images/svg/5star.svg"
+                  alt="Score"
+                />
+                <span class="rating-count">4.5/5</span></span
+              >
+              <strong class="testimonial-title">Excellent Service</strong>
+              <p class="testimonial-text">
+                These superfoods are packed with <br />
+                vital nutrients, including vitamins <br />
+                and minerals that can help keep <br />
+                you health. Plus, they’re easy to <br />
+                enjoy-just add water and let the <br />
+                magic happen!
+              </p>
+              <div class="testimonial-author">
+                <img
+                  class="author-avatar"
+                  src="assets/images/prof1 (1).png"
+                  alt=""
+                /><span class="author-name"
+                  >Mustapha kadi<span class="author-role">Client</span></span
+                >
+              </div>
+            </div>
+            <div class="comment-slide-item1 testimonial-card">
+              <span class="card-rating"
+                ><img
+                  class="rating-icon"
+                  src="assets/images/svg/5star.svg"
+                  alt="Score"
+                />
+                <span class="rating-count">4.5/5</span></span
+              >
+              <strong class="testimonial-title">Excellent Service</strong>
+              <p class="testimonial-text">
+                These superfoods are packed with <br />
+                vital nutrients, including vitamins <br />
+                and minerals that can help keep <br />
+                you health. Plus, they’re easy to <br />
+                enjoy-just add water and let the <br />
+                magic happen!
+              </p>
+              <div class="testimonial-author">
+                <img
+                  class="author-avatar"
+                  src="assets/images/prof2.png"
+                  alt=""
+                /><span class="author-name"
+                  >Mustapha kadi<span class="author-role">Client</span></span
+                >
+              </div>
+            </div>
+            <svg
+              class="arrow_left"
+              width="31"
+              height="33"
+              viewBox="0 0 31 33"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M31 16.5078C30.9961 25.6341 24.0511 33.0188 15.4838 33C6.90071 32.9811 -0.00491524 25.6111 5.72205e-06 16.4743C0.00886536 7.3658 6.94009 -1.07462e-05 15.4995 -1.07462e-05C24.0747 -1.07462e-05 31.002 7.37837 31 16.5078ZM9.98683 15.3918C9.98092 15.3635 9.97108 15.3321 9.96419 15.3038C10.0429 15.2157 10.1197 15.1267 10.1985 15.0407C10.9063 14.2747 11.615 13.515 12.313 12.7427C12.7422 12.2669 12.7323 11.5742 12.313 11.1551C11.8956 10.739 11.2764 10.76 10.8482 11.2232C9.70037 12.465 8.55254 13.7057 7.41654 14.959C6.65165 15.8026 6.60145 17.037 7.35157 17.89C8.52104 19.2188 9.72793 20.5077 10.9338 21.7988C11.2823 22.1729 11.8336 22.1771 12.2313 21.8648C12.7333 21.4655 12.7737 20.7121 12.3002 20.1902C11.5816 19.3917 10.8482 18.6079 10.1217 17.8156C10.0636 17.7517 10.0164 17.6784 9.92973 17.5683C10.1178 17.5683 10.2428 17.5683 10.3678 17.5683C14.586 17.5683 18.8022 17.5704 23.0194 17.5683C23.6366 17.5683 24.0845 17.1387 24.117 16.5267C24.1475 15.9367 23.7095 15.4484 23.0982 15.3991C22.9731 15.3866 22.8462 15.3928 22.7211 15.3928C18.6083 15.3907 14.4974 15.3907 10.3835 15.3907C10.2526 15.3918 10.1197 15.3918 9.98683 15.3918Z"
+                fill="#0A490A"
+              />
+            </svg>
+            <svg
+              class="arrow-right"
+              width="31"
+              height="33"
+              viewBox="0 0 31 33"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1.08305e-05 16.4922C0.00394846 7.36586 6.94895 -0.0188141 15.5163 4.57764e-05C24.0993 0.0189095 31.0049 7.38891 31 16.5257C30.9911 25.6342 24.0599 33 15.5005 33C6.92532 33 -0.00195799 25.6216 1.08305e-05 16.4922ZM21.0132 17.6082C21.0191 17.6365 21.0289 17.6679 21.0358 17.6962C20.9571 17.7843 20.8803 17.8733 20.8015 17.9593C20.0938 18.7253 19.385 19.485 18.687 20.2573C18.2578 20.7331 18.2677 21.4258 18.687 21.8449C19.1044 22.261 19.7236 22.24 20.1518 21.7768C21.2997 20.535 22.4475 19.2943 23.5835 18.041C24.3484 17.1974 24.3986 15.963 23.6484 15.11C22.479 13.7812 21.2721 12.4923 20.0662 11.2012C19.7177 10.8271 19.1664 10.8229 18.7687 11.1352C18.2667 11.5345 18.2263 12.2879 18.6998 12.8098C19.4184 13.6083 20.1518 14.3921 20.8783 15.1844C20.9364 15.2483 20.9837 15.3216 21.0703 15.4317C20.8823 15.4317 20.7572 15.4317 20.6322 15.4317C16.414 15.4317 12.1978 15.4296 7.98061 15.4317C7.36338 15.4317 6.91548 15.8613 6.88299 16.4733C6.85248 17.0633 7.29054 17.5516 7.90185 17.6009C8.02687 17.6134 8.15386 17.6072 8.27888 17.6072C12.3917 17.6093 16.5026 17.6093 20.6165 17.6093C20.7474 17.6082 20.8803 17.6082 21.0132 17.6082Z"
+                fill="#0A490A"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="BlogArticles">
+          <h2>Blog § Articles</h2>
+          <p>
+            These superfoods are packed with vital nutrients, including vitamins
+            and minerals that can <br />
+            help keep you health. Plus, they’re easy to enjoy-just add water and
+            let the magic happen!
+          </p>
+        </div>
+        <div class="frut__articles">
+          <div class="frut__articles-item">
+            <div class="food-mark">Food</div>
+            <div class="frut__info-image"></div>
+            <div class="frut__info-item">
+              <strong class="title__info-item"
+                >Fruit is an Essential <br />
+                food for our life</strong
+              >
+              <p class="par__info-item">
+                These superfoods are packed <br />
+                with vital nutrients, including <br />
+                vitamins and minerals that can <br />
+                help keep you health..
+              </p>
+              <button class="frut-info-btn">
+                Read more
+                <img
+                  class="btn-icon"
+                  src="assets/images/svg/arrow-right-icon.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+            <div class="shadow__info-image"></div>
+          </div>
+          <div class="frut__articles-item">
+            <div class="food-mark">Food</div>
+            <div class="frut__info-image2"></div>
+            <div class="frut__info-item">
+              <strong class="title__info-item"
+                >Fruit is may reduce <br />
+                risk of breast cancer</strong
+              >
+              <p class="par__info-item">
+                These superfoods are packed <br />
+                with vital nutrients, including <br />
+                vitamins and minerals that can <br />
+                help keep you health..
+              </p>
+              <button class="frut-info-btn">
+                Read more
+                <img
+                  class="btn-icon"
+                  src="assets/images/svg/arrow-right-icon.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+          <div class="frut__articles-item">
+            <div class="food-mark">Food</div>
+            <div class="frut__info-image3"></div>
+            <div class="frut__info-item">
+              <strong class="title__info-item"
+                >Heavy Weigt Diet <br />
+                Plan</strong
+              >
+              <p class="par__info-item">
+                These superfoods are packed <br />
+                with vital nutrients, including <br />
+                vitamins and minerals that can <br />
+                help keep you health..
+              </p>
+              <button class="frut-info-btn">
+                Read more
+                <img
+                  class="btn-icon"
+                  src="assets/images/svg/arrow-right-icon.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+            <div class="shadow__info-image"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__brand">
+          <h2 class="footer__logo">Foodmart</h2>
+          <p class="footer__description">
+            These superfoods are packed with vital nutrients,
+            <br />
+            including vitamins and minerals that can help keep you
+            <br />
+            health..
+          </p>
+        </div>
+
+        <div class="footer__links">
+          <ul class="footer__menu">
+            <h3 class="footer__menu-title">Navigation</h3>
+            <li class="footer__menu-item">Search</li>
+            <li class="footer__menu-item">My Cart</li>
+            <li class="footer__menu-item">Categories</li>
+            <li class="footer__menu-item">Wishlist</li>
+          </ul>
+
+          <ul class="footer__menu">
+            <h3 class="footer__menu-title">About Us</h3>
+            <li class="footer__menu-item">About us</li>
+            <li class="footer__menu-item">Contact us</li>
+            <li class="footer__menu-item">Faq’s</li>
+            <li class="footer__menu-item">Delivery</li>
+            <li class="footer__menu-item">Privacy Policy</li>
+          </ul>
+        </div>
+
+        <div class="footer__newsletter">
+          <h3 class="footer__newsletter-title">
+            Subscribe newsletter and get 20% off
+          </h3>
+
+          <p class="footer__newsletter-text">
+            These superfoods are packed with vital nutrients,
+            <br />
+            including vitamins.
+          </p>
+
+          <div class="footer__subscribe">
+            <input
+              class="footer__input"
+              type="text"
+              placeholder="Enter email address....."
+            />
+
+            <button class="footer__submit" type="submit">
+              <img src="assets/images/svg/arrow-right-icon.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span class="footer__copyright"> 2024, All Rights Reserved </span>
+
+        <span class="footer__creator"> Made by soroush-zb </span>
+      </div>
+    </footer>
+  </body>
+</html>
